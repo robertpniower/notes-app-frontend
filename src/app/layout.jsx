@@ -1,4 +1,6 @@
 import "./globals.css";
+import Navbar from "../app/_components/navbar";
+import Footer from "../app/_components/footer";
 
 export const metadata = {
   title: "Notes App",
@@ -8,7 +10,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar/>
+        <main>{children}</main>
+
+        <Footer/>
+      </body>
     </html>
   );
 }
